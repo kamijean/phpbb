@@ -20,12 +20,11 @@ set :repo_url, 'git@github.com:kamijean/phpbb.git'
 # set :pty, true
 
 # Default value for :linked_files is []
-# set :linked_files, %w{phpBB3/config.php}
+set :linked_files, %w{phpBB/config.php}
 
 # Default value for linked_dirs is []
 # set :linked_dirs, fetch(:linked_dirs, []).push('phpBB3/store/', 'phpBB3/files/', 'phpBB3/cache/', 'phpBB3/images/avatars/upload/')
-# set :linked_dirs, %w{phpBB3/store phpBB3/files phpBB3/cache phpBB3/image/avatars/upload}
-# set :linked_dirs, %w{phpBB3}
+set :linked_dirs, %w{phpBB/store phpBB/files phpBB/cache phpBB/image/avatars/upload}
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
