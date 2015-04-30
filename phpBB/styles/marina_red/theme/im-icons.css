@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'im-icons';
+  src: url('../fonts/im-icons.eot?41032945');
+  src: url('../fonts/im-icons.eot?41032945#iefix') format('embedded-opentype'),
+       url('../fonts/im-icons.woff?41032945') format('woff'),
+       url('../fonts/im-icons.ttf?41032945') format('truetype'),
+       url('../fonts/im-icons.svg?41032945#im-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'im-icons';
+    src: url('../font/im-icons.svg?41032945#im-icons') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "im-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-aim:before { content: '\e800'; } /* '' */
+.icon-windows:before { content: '\e801'; } /* '' */
+.icon-yahoo:before { content: '\e802'; } /* '' */
+.icon-icq:before { content: '\e803'; } /* '' */
+.icon-jabber:before { content: '\e804'; } /* '' */

@@ -1,0 +1,61 @@
+	</div>
+	
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner inner-block">
+
+			<ul class="linklist">
+				<li><i class="fa fa-home grey"></i><a href="{U_INDEX}" accesskey="h">{L_INDEX}</a></li>
+					<!-- IF not S_IS_BOT -->
+						<!-- IF S_WATCH_FORUM_LINK --><li><!-- IF S_WATCHING_FORUM --><i class="fa fa-times grey"></i><!-- ELSE --><i class="fa fa-check-square-o grey"></i><!-- ENDIF --><a href="{S_WATCH_FORUM_LINK}" title="{S_WATCH_FORUM_TITLE}">{S_WATCH_FORUM_TITLE}</a></li><!-- ENDIF -->
+						<!-- IF U_WATCH_TOPIC --><li><!-- IF S_WATCHING_TOPIC --><i class="fa fa-times grey"></i><!-- ELSE --><i class="fa fa-check-square-o grey"></i><!-- ENDIF --><a href="{U_WATCH_TOPIC}" title="{L_WATCH_TOPIC}">{L_WATCH_TOPIC}</a></li><!-- ENDIF -->
+						<!-- IF U_BOOKMARK_TOPIC --><li><i class="fa fa-bookmark grey"></i><a href="{U_BOOKMARK_TOPIC}" title="{L_BOOKMARK_TOPIC}">{L_BOOKMARK_TOPIC}</a></li><!-- ENDIF -->
+						<!-- IF U_BUMP_TOPIC --><li><i class="fa fa-hand-o-up grey"></i><a href="{U_BUMP_TOPIC}" title="{L_BUMP_TOPIC}">{L_BUMP_TOPIC}</a></li><!-- ENDIF -->
+					<!-- ENDIF -->
+				<li class="rightside">{S_TIMEZONE}</li>
+			</ul>
+
+		</div>
+	</div>
+
+</div>
+
+<div id="footer">
+	<div id="footer-inner" class="inner-block">
+
+		<!-- Prefooter blocks go below -->
+
+		<div id="footer-main">
+
+		<!-- Social links go below -->
+
+			{CREDIT_LINE}<br />
+			<!-- IF TRANSLATION_INFO --><br />{TRANSLATION_INFO}<!-- ENDIF -->
+			<!-- IF DEBUG_OUTPUT --><br />{DEBUG_OUTPUT}<!-- ENDIF -->
+	        <div id="pixelgoose-copyright">phpBB 3 Marina theme by <a title="Premium phpBB Themes" href="http://pixelgoose.com/">PixelGoose Studio</a></div>
+		</div>
+	</div>
+</div>
+<div id="footer-links">
+	<div id="footer-links-inner" class="inner-block">
+		<ul class="leftside-links">
+			<!-- IF U_TEAM --><li><i class="fa fa-users fa-lg"></i><a href="{U_TEAM}">{L_THE_TEAM}</a></li><!-- ENDIF -->
+			<!-- IF not S_IS_BOT --><li><i class="fa fa-times-circle fa-lg"></i><a href="{U_DELETE_COOKIES}">{L_DELETE_COOKIES}</a></li><!-- ENDIF -->
+		</ul>
+		<ul class="rightside-links">
+			<!-- IF U_MCP --><li><i class="fa fa-eye fa-lg"></i><a class="mcp" href="{U_MCP}">{L_MCP}</a></li><!-- ENDIF -->
+			<!-- IF U_ACP --><li><i class="fa fa-rocket fa-lg"></i><a class="acp" href="{U_ACP}">{L_ACP}</a></li><!-- ENDIF -->
+		</ul>
+	</div>
+</div>
+
+</div>
+
+<div id="cron-block">
+	<a id="bottom" accesskey="z"></a>
+	<!-- IF not S_IS_BOT -->{RUN_CRON_TASK}<!-- ENDIF -->
+</div>
+
+</body>
+</html>

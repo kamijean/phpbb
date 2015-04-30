@@ -1,0 +1,1259 @@
+/* General Markup Styles
+---------------------------------------- */
+
+* {
+	/* Reset browsers default margin, padding and font sizes */
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 100%;
+	/* Always show a scrollbar for short pages - stops the jump when the scrollbar appears. non-IE browsers */
+	height: 101%;
+}
+
+body {
+	/* Text-Sizing with ems: http://www.clagnut.com/blog/348/ */
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	color: #828282;
+	background-color: #FFFFFF;
+	/*font-size: 62.5%;			 This sets the default font size to be equivalent to 10px */
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
+h1 {
+	/* Forum name */
+	font-family: 'Roboto', sans-serif;
+	/*color: #FFFFFF;*/
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-weight: normal;
+	font-size: 2em;
+	letter-spacing: -1px;
+	line-height: 1.4em;
+}
+
+h2 {
+	/* Forum header titles */
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #3f3f3f;
+	font-size: 2em;
+	margin: 0 0 20px 0;
+	letter-spacing: -1px;
+	line-height: 1.4em;
+}
+
+h2.solo {
+	margin-bottom: 1.4em;
+}
+
+h3 {
+	/* Sub-headers (also used as post headers, but defined later) */
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	margin-bottom: 3px;
+	padding-bottom: 2px;
+	font-size: 1.500em;
+	margin-top: 20px;
+	line-height: 1.4em;
+}
+
+h4 {
+	/* Forum and topic list titles */
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.3em;
+	line-height: 1.4em;
+}
+
+p {
+	line-height: 1.5em;
+	font-size: 1em;
+	margin-bottom: 1.5em;
+}
+
+img {
+	border-width: 0;
+}
+
+hr {
+	/* Also see tweaks.css */
+	border: 0 none #FFFFFF;
+	border-top: 2px solid #CECFDC;
+	height: 2px;
+	margin: 20px 0;
+	display: block;
+	clear: both;
+}
+
+hr.dashed {
+	border-top: 2px solid #D9D9D9;
+	margin: 20px 0;
+}
+
+hr.divider {
+	display: none;
+}
+
+p.right {
+	text-align: right;
+}
+li {
+	line-height: 1.5em;
+}
+/* Main blocks
+---------------------------------------- */
+#wrap {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+#simple-wrap {
+	padding: 6px 10px;
+}
+.inner-block {
+	width: 1180px;
+}
+#page-body {
+	/*width: 1180px;*/
+	margin: 0 auto;
+	clear: both;
+	overflow: hidden;
+}
+#page-footer {
+	display: none;
+	clear: both;
+}
+
+#page-footer h3 {
+	margin-top: 20px;
+}
+
+#logo {
+	/*float: left;*/
+	width: 800px;
+	padding: 0;
+	outline: 0;
+}
+
+a#logo:hover {
+	text-decoration: none;
+}
+
+/* Search box
+--------------------------------------------- */
+
+#topbar-inner .search-box {
+	margin: 11px 0 0;
+	height: 47px;
+	/*width: 400px;*/
+	white-space: nowrap;
+}
+
+#topbar-inner .search-box .search-box-inner {
+	background-color: #444;
+	border-radius: 0px;
+	border: solid 2px #666;
+	height: 30px;
+	width: 220px;
+	display: inline-block;
+}
+#topbar-inner .search-box input#keywords {
+	background-color: transparent;
+	border: 0;
+	color: #DADADA;
+	height: 30px;
+	width: 178px;
+	padding: 0 0 0 10px;
+	outline: 0 !important;
+}
+#topbar-inner .search-box button.button2 {
+	float: right;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	border: 0;
+	background-color: transparent;
+}
+#topbar-inner .search-box button.button2 i {
+	color: #C2CBD2;
+}
+#topbar-inner .search-box .search-adv-link {
+	display: inline-block;
+	line-height: 35px;
+	margin-left: 10px;
+}
+
+
+
+/*.search-box {
+	color: #43A6DF;
+	float: left;
+	white-space: nowrap;
+}
+.search-box-inner {
+	display: inline-block;
+    height: 28px;
+    width: 250px;
+    background-color: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    height: 26px;
+	padding: 2px;
+}
+.search-box #keywords {
+    height: 20px;
+    width: 200px;
+	background-color: #FFF;
+}
+
+.search-box input {
+	border: 1px solid #b0b0b0;
+}
+.search-box .inputbox {
+	padding: 2px 0 2px 6px;
+}
+.topic-actions .search-box {
+	margin: 0 0 12px;
+}
+.search-box input.button1 {
+	padding: 1px 5px;
+}
+
+.search-box li {
+	text-align: right;
+	margin-top: 4px;
+}
+
+.search-box img {
+	vertical-align: middle;
+	margin-right: 3px;
+}
+.search-adv-link {
+	line-height: 31px;
+	display: inline-block;
+
+}
+.search-form {
+	overflow: hidden;
+}*/
+
+/* Site description and logo */
+#site-logo {
+	width: 50%;
+	display: none;
+	height: 65px;
+	vertical-align: middle;
+}
+#site-logo img {
+	max-width: 95%;
+}
+#site-logo h1 {
+    margin-left: 20px;
+    margin-right: 0;
+    margin-top: 50px;
+	float: left;
+	color: #383838;
+}
+#site-logo p {
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 0;
+}
+
+/* Round cornered boxes and backgrounds
+---------------------------------------- */
+
+#topbar {
+	height: 60px;
+	background-color: #444;
+}
+#topbar-inner {
+	height: 60px;
+	margin: 0 auto;
+}
+#topbar .user-links {
+	float: right;
+	margin-top: 20px;
+}
+#topbar .user-links li {
+	display: inline-block;
+	margin-left: 15px;
+}
+#topbar .user-links li:first-child {
+	margin-left: 0;
+}
+#topbar .user-links li .fa {
+	margin-right: 5px;
+}
+#topbar .user-links li .fa-lg {
+    vertical-align: -5%;
+}
+.block-header {
+	display: none;
+	font-family: Roboto, sans-serif;
+	font-size: 1.333em;
+	line-height: 50px;
+	background-color: #383245;
+	color: #FFF;
+	border-radius: 0 0 0 0;
+	padding-left: 20px;
+}
+.block-header a:link, .block-header a:visited {
+	color: #FFF;
+}
+.block-body {
+	display: none;
+	background-color: #FFF;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 0 0 0 0;
+}
+.block-body *:last-child {
+	margin-bottom: 0;
+}
+.block-outer.width-50 {
+	float: left;
+	width: 49%;
+}
+.block-outer.width-50.first {
+	margin-right: 2%;
+}
+
+/* Header with logo and navigation
+---------------------------------------- */
+
+#headerbar {
+	display: none;
+	height: 65px;
+	margin-bottom: 40px;
+}
+#headerbar-inner {
+	height: 65px;
+	margin: 0 auto;
+	display: table;
+	border-bottom: solid 2px #CECFDC;
+}
+#main-nav {
+	display: table-cell;
+	width: 50%;
+	height: 65px;
+	vertical-align: middle;
+}
+#main-nav ul {
+	float: right;
+}
+#main-nav ul li {
+	display: inline-block;
+	font-family: Roboto, sans-serif;
+	font-size: 1.333em;
+}
+#main-nav ul li a {
+	display: inline-block;
+	padding: 5px 15px;
+	color: #383245;
+	font-weight: 500;
+}
+#main-nav ul li a:link, #main-nav ul li a:visited {
+	color: #383245;
+	text-decoration: none;
+}
+#main-nav ul li a:hover {
+	color: #EF5443;
+}
+#main-nav ul li:first-child a {
+	padding-left: 0;
+}
+#main-nav ul li:last-child a {
+	padding-right: 0;
+}
+#main-nav ul li a.active {
+	color: #FFF;
+	background-color: #EF5443;
+	border-radius: 0px;
+	padding-left: 15px !important;
+}
+#main-nav ul li:last-child a.active {
+    padding-right: 15px !important;
+}
+#main-nav ul li a.active:hover {
+	opacity: .8;
+}
+
+/* Subheader
+---------------------------------------- */
+
+#subheader {
+	height: 160px;
+	background-color: #EF5443;
+	background-image: url("{T_THEME_PATH}/images/subheader_bg.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	margin-top: -40px;
+	display: table;
+	width: 100%;
+}
+#subheader-inner {
+	height: 160px;
+	margin: 0 auto;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+/* Breadcrumbs
+---------------------------------------- */
+
+.navbar {
+	/*padding: 20px 0;*/
+}
+.navbar .inner {
+	margin: 0 auto;
+}
+.navbar .fa-home {
+	margin-right: 5px;
+}
+.navbar .fa-caret-right {
+	margin: 0 8px;
+}
+.navbar .linklist i {
+
+}
+
+.forabg {
+	background: #FFF none repeat-x 0 0;
+	margin-bottom: 20px;
+	padding: 0;
+	clear: both;
+	border-radius: 0px;
+}
+
+.forumbg {
+	/*background: #ebebeb none repeat-x 0 0;*/
+	margin-bottom: 20px;
+	/*padding: 0 5px;*/
+	clear: both;
+	border-radius: 0px;
+}
+
+.panel {
+	margin-bottom: 20px;
+	padding: 20px;
+	border-radius: 0px;
+	overflow: hidden;
+}
+
+.post {
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: #FFF;
+	border-radius: 0px;
+	overflow: hidden;
+}
+
+.post:target .content {
+	color: #000000;
+}
+
+.post:target h3 a {
+	color: #000000;
+}
+
+/*.bg1	{ background-color: #f7f7f7;}*/
+/*.bg2	{ background-color: #f2f2f2; }*/
+/*.bg3	{ background-color: #ebebeb; }*/
+
+.rowbg {
+	margin: 5px 5px 2px 5px;
+}
+
+.ucprowbg {
+	background-color: #e2e2e2;
+}
+
+.fieldsbg {
+	/*border: 1px #DBDEE2 solid;*/
+	background-color: #eaeaea;
+}
+
+/*span.corners-top, span.corners-bottom, span.corners-top span, span.corners-bottom span {
+	font-size: 1px;
+	line-height: 1px;
+	display: block;
+	height: 5px;
+	background-repeat: no-repeat;
+}
+
+span.corners-top {
+	background-image: none;
+	background-position: 0 0;
+	margin: 0 -5px;
+}
+
+span.corners-top span {
+	background-image: none;
+	background-position: 100% 0;
+}
+
+span.corners-bottom {
+	background-image: none;
+	background-position: 0 100%;
+	margin: 0 -5px;
+	clear: both;
+}
+
+span.corners-bottom span {
+	background-image: none;
+	background-position: 100% 100%;
+}
+
+.headbg span.corners-bottom {
+	margin-bottom: -1px;
+}
+
+.post span.corners-top, .post span.corners-bottom, .panel span.corners-top, .panel span.corners-bottom, .navbar span.corners-top, .navbar span.corners-bottom {
+	margin: 0 -10px;
+}*/
+
+/* Horizontal lists
+----------------------------------------*/
+ul.linklist {
+	display: block;
+	margin: 15px 0;
+}
+ul.linklist.memberlist {
+	margin: 0;
+}
+ul.linklist li {
+	display: block;
+	list-style-type: none;
+	float: left;
+	width: auto;
+	margin-right: 10px;
+	font-size: 1em;
+	/*line-height: 2.2em;*/
+}
+ul.linklist li i {
+	margin-right: 5px;
+}
+ul.linklist li.rightside, p.rightside {
+	float: right;
+	margin-right: 0;
+	margin-left: 10px;
+	text-align: right;
+}
+#page-body-inner > .linklist {
+    margin-bottom: 10px;
+}
+ul.navlinks {
+	/*padding-bottom: 1px;
+	margin-bottom: 1px;
+	border-bottom: 1px solid #FFFFFF;
+	font-weight: bold;*/
+}
+
+ul.leftside {
+	float: left;
+	margin-left: 0;
+	margin-right: 5px;
+	text-align: left;
+}
+
+ul.rightside {
+	float: right;
+	margin-left: 5px;
+	margin-right: -5px;
+	text-align: right;
+}
+
+/* Table styles
+----------------------------------------*/
+table.table1 {
+	/* See tweaks.css */
+}
+
+#ucp-main table.table1 {
+	padding: 2px;
+}
+
+table.table1 thead th {
+	font-weight: normal;
+	/*text-transform: uppercase;*/
+	color: #FFFFFF;
+	line-height: 1.3em;
+	font-size: 1em;
+	padding: 0;
+}
+
+table.table1 thead th span {
+	padding-left: 7px;
+}
+
+table.table1 tbody tr {
+	border: 1px solid #cfcfcf;
+}
+
+table.table1 tbody tr:hover, table.table1 tbody tr.hover {
+	/*background-color: #f6f6f6;*/
+	/*color: #000;*/
+}
+
+table.table1 td {
+	/*color: #6a6a6a;*/
+	/*font-size: 1.1em;*/
+}
+
+table.table1 tbody td {
+	padding: 10px;
+	border-top: 1px solid #FAFAFA;
+}
+
+table.table1 tbody th {
+	padding: 5px;
+	border-bottom: 1px solid #000000;
+	text-align: left;
+	color: #333333;
+	background-color: #FFFFFF;
+}
+
+/* Specific column styles */
+table.table1 .name		{ text-align: left; }
+table.table1 .posts		{ text-align: center !important; width: 7%; }
+table.table1 .joined	{ text-align: left; width: 15%; }
+table.table1 .active	{ text-align: left; width: 15%; }
+table.table1 .mark		{ text-align: center; width: 7%; }
+table.table1 .info		{ text-align: left; width: 30%; }
+table.table1 .info div	{ width: 100%; white-space: normal; overflow: hidden; }
+table.table1 .autocol	{ line-height: 2em; white-space: nowrap; }
+table.table1 thead .autocol { padding-left: 1em; }
+
+table.table1 span.rank-img {
+	float: right;
+	width: auto;
+}
+
+table.info td {
+	padding: 3px;
+}
+
+table.info tbody th {
+	padding: 3px;
+	text-align: right;
+	vertical-align: top;
+	color: #000000;
+	font-weight: normal;
+}
+
+.forumbg table.table1 {
+	margin: 0;
+}
+
+.forumbg-table > .inner {
+	margin: 0 -1px;
+}
+
+.forumbg-table > .inner > span.corners-top {
+	margin: 0 -4px -1px -4px;
+}
+
+.forumbg-table > .inner > span.corners-bottom {
+	margin: -1px -4px 0 -4px;
+}
+
+/* Misc layout styles
+---------------------------------------- */
+/* column[1-2] styles are containers for two column layouts
+   Also see tweaks.css */
+.column1 {
+	float: left;
+	clear: left;
+	width: 49%;
+}
+
+.column2 {
+	float: right;
+	clear: right;
+	width: 49%;
+}
+
+/* General classes for placing floating blocks */
+.left-box {
+	float: left;
+	width: auto;
+	text-align: left;
+}
+.ucp-main .display-options > .left-box {
+	padding-left: 20px;
+}
+.right-box {
+	float: right;
+	width: auto;
+	text-align: right;
+}
+
+dl.details {
+	/*font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;*/
+	/*font-size: 1.1em;*/
+}
+
+dl.details dt {
+	float: left;
+	clear: left;
+	width: 30%;
+	text-align: right;
+	color: #000000;
+	display: block;
+}
+
+dl.details dd {
+	margin-left: 0;
+	padding-left: 5px;
+	margin-bottom: 5px;
+	color: #828282;
+	float: left;
+	width: 65%;
+}
+.details strong {
+	font-weight: normal;
+}
+/* Pagination
+---------------------------------------- */
+.pagination {
+	height: 1%; /* IE tweak (holly hack) */
+	width: auto;
+	text-align: right;
+	margin-top: 5px;
+	float: right;
+}
+
+.pagination span.page-sep {
+	display: none;
+}
+
+li.pagination {
+	margin-top: 0;
+}
+
+.pagination strong, .pagination b {
+	font-weight: normal;
+}
+
+.pagination span strong {
+	padding: 3px 7px;
+	margin: 0 1px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #FFFFFF;
+	background-color: #bfbfbf;
+	/*border: 1px solid #bfbfbf;*/
+	border-radius: 0px;
+}
+.rightside.pagination span strong {
+	padding: 3px 7px;
+	line-height: 24px;
+}
+.pagination span a, .pagination span a:link, .pagination span a:visited, .pagination span a:active {
+	font-weight: normal;
+	text-decoration: none;
+	margin: 0 1px;
+	padding: 3px 7px;
+	/*background-color: #eeeeee;*/
+	/*border: 1px solid #bababa;*/
+	line-height: 1.5em;
+	border-radius: 0px;
+}
+.rightside.pagination span a, .rightside.pagination span a:link, .rightside.pagination span a:visited, .rightside.pagination span a:active {
+	padding: 3px 7px;
+}
+li.row .pagination span a {
+	padding: 0 3px;
+	font-size: 0.917em;
+	border-radius: 0px;
+}
+.pagination span a:hover {
+	border-color: #d2d2d2;
+	/*background-color: #d2d2d2;*/
+	color: #FFF;
+	text-decoration: none;
+	border-radius: 0px;
+}
+
+.pagination img {
+	vertical-align: middle;
+}
+
+/* Pagination in viewforum for multipage topics */
+.row .pagination {
+	display: block;
+	float: right;
+	width: auto;
+	margin-top: 0;
+	padding: 1px 0 1px 0;
+	font-size: 0.917em;
+	/*background: none 0 50% no-repeat;*/
+}
+.row .pagination .fa {
+	margin-right: 3px;
+}
+.row .pagination span a, li.pagination span a {
+	background-color: #FFFFFF;
+}
+
+.row .pagination span a:hover, li.pagination span a:hover {
+	background-color: #d2d2d2;
+}
+
+
+/* Memberlist
+---------------------------------------- */
+#memberlist thead th {
+    background-color: #383245;
+	color: #FFFFFF;
+	line-height: 30px;
+	/*padding-left: 20px;
+	*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+}
+#memberlist thead th:first-child {
+	border-top-left-radius: 5px;
+}
+#memberlist thead th:last-child {
+	border-top-right-radius: 5px;
+}
+
+/* Miscellaneous styles
+---------------------------------------- */
+.pagetitle a:link, .pagetitle a:visited {
+	color: #383245;
+}
+#forum-permissions {
+	float: right;
+	width: auto;
+	padding-left: 5px;
+	margin-left: 5px;
+	margin-top: 10px;
+	text-align: right;
+}
+
+.copyright {
+	padding: 5px;
+	text-align: center;
+	color: #555555;
+}
+
+.small {
+	font-size: 0.9em !important;
+}
+
+.titlespace {
+	margin-bottom: 15px;
+}
+
+.headerspace {
+	margin-top: 20px;
+}
+
+.error {
+	font-weight: bold;
+	font-size: 1em;
+    border-left: 3px solid #BC2A4D;
+    margin-left: 20px;
+    padding: 10px 0 10px 20px;
+}
+
+.reported {
+	background-color: #f7f7f7;
+}
+
+li.reported:hover {
+	background-color: #ececec;
+}
+
+div.rules {
+	padding: 20px;
+	margin: 20px 0;
+	font-size: 1em;
+	border-radius: 0px;
+}
+div.rules *:last-child {
+	margin-bottom: 0;
+}
+div.rules h2 {
+	margin-top: 0;
+	margin-bottom: 10px !important;
+	font-size: 1.500em;
+	font-weight: 500;
+}
+
+div.rules ul, div.rules ol {
+	margin-left: 20px;
+}
+div.rules .fa {
+	color: #B3B3B3;
+	margin-right: 10px;
+}
+p.rules {
+	background-color: #ececec;
+	background-image: none;
+	padding: 5px;
+}
+
+p.rules img {
+	vertical-align: middle;
+	padding-top: 5px;
+}
+
+p.rules a {
+	vertical-align: middle;
+	clear: both;
+}
+#message p:last-child {
+	margin-bottom: 0;
+}
+#top {
+	position: absolute;
+	top: -20px;
+}
+.section-viewtopic #page-body > h1,
+.section-posting #page-body > h1 {
+	margin-top: 20px;
+	/*margin-bottom: 40px;*/
+}
+p.author .fa {
+	margin-right: 5px;
+}
+p.author .fa.unread {
+	color: #F27935;
+}
+.button2.del {
+	margin-bottom: 0;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 3px 4px;
+}
+.site-name {
+	margin: 0 auto;
+	text-align: center;
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif;
+    font-size: 3.333em;
+    /*padding-top: 28px;*/
+}
+p.site-description {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1.667em;
+}
+.marklist {
+	margin: 10px 0 0;
+}
+.username {
+	word-wrap: break-word;
+}
+.username a {
+	word-wrap: break-word;
+}
+.status-dot {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #C1C1C1;
+	margin-bottom: 1px;
+	margin-left: 5px;
+}
+.online .status-dot {
+	background-color: #55BF00;
+}
+.lastpost .fa-lg {
+	vertical-align: -10%;
+}
+.mark-as-read {
+	white-space: nowrap;
+}
+::selection {
+	background: none repeat scroll 0 0 #E3E3E3;
+	color: #000;
+}
+::-moz-selection {
+	background: none repeat scroll 0 0 #E3E3E3;
+	color: #000;
+}
+#crn {
+	height: 0;
+	line-height: 0;
+}
+#crn img {
+	height: 0;
+}
+.clear {
+	display: block;
+	clear: both;
+	font-size: 1px;
+	line-height: 1px;
+	background: transparent;
+}
+#pixelgoose-copyright a:link, #pixelgoose-copyright a:visited {
+	color: #EF5443 !important;
+}
+
+
+
+#login-link {
+	position: relative;
+}
+.login-window {
+	outline: 0;
+}
+.login-link {
+	display: none;
+}
+#login-box {
+	position: absolute;
+	right: 0;
+	background-color: #FFF;
+	border-radius: 0px;
+	width: 260px;
+	padding: 20px;
+	top: 30px;
+	z-index: 100;
+	display: none;
+}
+.quick-login {
+
+}
+.dropdown-arrow {
+	border-width: 0 9px 9px;
+	background-color: #FFF;
+	position: absolute;
+	right: 5px;
+}
+div.arrow-up {
+	border-left: 8px solid transparent;  /* left arrow slant */
+	border-right: 8px solid transparent; /* right arrow slant */
+	border-bottom: 8px solid #FFF; /* bottom, add background color here */
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    margin-left: 25px;
+    margin-top: 3px;
+    width: 0;
+    position: absolute;
+    top: -11px;
+    right: 8px;
+}
+#login-box .inputbox {
+	height: 30px;
+	outline: none !important;
+	border-radius: 0px;
+	border-width: 2px;
+	border-style: solid;
+	padding: 2px 0 2px 10px !important;
+	width: 244px;
+	margin-bottom: 10px;
+}
+#login-box .button2 {
+	height: 37px;
+	padding: 0 0 4px 0;
+	margin-top: 5px;
+	background-image: none !important;
+	background-color: #C7012E;
+	width: 258px !important;
+	border-radius: 0px;
+	border: 0;
+	color: #FFF;
+	margin-bottom: 10px;
+}
+#login-box .button2:hover {
+	opacity: .8;
+}
+#login-box label {
+	color: #383838;
+}
+#login-box #autologin_label {
+	font-size: 0.917em;
+	color: #7F95AD;
+}
+#login-box #autologin_label:hover {
+	color: #C7012E;
+}
+#login-box a:link, #login-box a:visited {
+	color: #EF5443 !important;
+}
+#login-box .forgot-pass {
+	background-color: #444;
+	/*height: 30px;*/
+	margin: 15px -20px -20px;
+	text-align: center;
+	padding: 12px 0;
+	border-radius: 0 0 0px 0px;
+}
+#login-box .forgot-pass a:link, #login-box .forgot-pass a:visited {
+	color: #eee !important;
+}
+
+/* Prefooter
+---------------------------------------- */
+#prefooter {
+	display: table;
+	border-bottom: solid 2px #40474B;
+	padding: 30px 0;
+	width: 100%;
+}
+#prefooter .prefooter-block {
+	display: table-cell;
+	vertical-align: top;
+	padding-right: 30px;
+}
+.prefooter-block.width-33 {
+	width: 33%;
+}
+.prefooter-block.width-50 {
+	width: 50%;
+}
+.prefooter-block.width-100 {
+	width: 100%;
+}
+#prefooter .prefooter-block:last-child {
+	padding-right: 0;
+}
+#prefooter h1, #prefooter h2, #prefooter h3, #prefooter h4 {
+	color: #FFF;
+	margin-bottom: 15px;
+}
+#prefooter ul {
+	list-style: none;
+}
+#prefooter ul li {
+	margin-bottom: 5px;
+}
+#prefooter ul li:last-child {
+	margin-bottom: 0;
+}
+#prefooter .prefooter-block *:first-child {
+	margin-top: 0;
+}
+#prefooter .prefooter-block *:last-child {
+	margin-bottom: 0;
+}
+
+/* Footer
+---------------------------------------- */
+
+#footer {
+	background-color: #383245;
+}
+#footer, #footer-links {
+	display: none;
+	color: #979797;
+}
+#footer a:link, #footer a:visited,
+#footer-links a:link, #footer-links a:visited {
+	color: #FFF;
+}
+#footer-inner {
+	margin: 0 auto;
+}
+#footer-main {
+	padding: 20px 0;
+	position: relative;
+}
+#footer-social-links {
+	position: absolute;
+	right: 0;
+	top: 22px;
+}
+#footer-social-links li {
+	display: inline-block;
+	margin-left: 10px;
+}
+#footer-social-links li:first-child {
+	margin-left: 0;
+}
+#footer-social-links li a:link, #footer-social-links li a:visited {
+	color: #979797;
+}
+#footer-social-links li a:hover {
+	opacity: .7;
+}
+#footer-links, #cron-block {
+	display: none;
+	background-color: #262130;
+}
+#footer-links-inner {
+	margin: 0 auto;
+	min-height: 60px;
+}
+#footer-links .leftside-links {
+	float: left;
+}
+#footer-links .leftside-links li {
+	display: inline-block;
+	margin-right: 15px;
+	margin-top: 22px;
+}
+#footer-links .rightside-links {
+	float: right;
+}
+#footer-links .rightside-links li {
+	display: inline-block;
+	margin-left: 15px;
+	margin-top: 22px;
+}
+#footer-links .fa {
+    color: #EF5443;
+    margin-right: 5px;
+    vertical-align: -5%;
+}
+
+/* Sidebar
+---------------------------------------- */
+
+#sidebar {
+	width: 280px;
+	float: left;
+	/*margin-top: 43px;*/
+}
+#page-body-inner {
+	float: none;
+	width: 100%;
+}
+.sidebar#page-body-inner {
+	width: 880px;
+	float: left;
+	margin-right: 20px;
+}
+.section-viewtopic #page-body-inner {
+	width: 100% !important;
+}
+#sidebar img {
+	max-width: 100%;
+}
+/* Transitions
+---------------------------------------- */
+#login-box .inputbox, #login-box .button2,
+#main-nav ul li a,
+#footer-social-links li a,
+.buttons div a,
+input.search,
+a.button1, input.button1, input.button3, a.button2, input.button2,
+.inputbox,
+button.button2,
+#tabs a,
+#cp-menu #navigation li > a,
+ul.profile-icons li a,
+.pagination span a,
+#topbar-inner .search-box .search-box-inner {
+	transition: all 0.1s linear 0s;
+	-webkit-transform: translateY(0px) !important;
+	-webkit-transform: translateZ(0px) !important;
+}
+
