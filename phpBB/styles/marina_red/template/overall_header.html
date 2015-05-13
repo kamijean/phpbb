@@ -80,6 +80,17 @@
 <script type="text/javascript">
 //<![CDATA[
 $(document).ready(function() {
+
+	if(window.self !== window.top){
+		var head  = document.getElementsByTagName('head')[0];
+		var cssLink = document.createElement('link')
+		cssLink.href = 'styles/iframe.css';
+		cssLink.rel = 'stylesheet';
+		cssLink.type = 'text/css';
+		
+    head.appendChild(cssLink);
+  }
+
 	$('a.login-window').click(function() {
 
 		// Getting the variable's value from a link

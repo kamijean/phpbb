@@ -9,23 +9,6 @@
 */
 
 /**
-*/
-
-//include a javascript file
-echo "<script type='text/javascript'>
-	if(window.self !== window.top){
-		var head  = document.getElementsByTagName('head')[0];
-		var cssLink = document.createElement('link')
-		cssLink.href = 'styles/iframe.css';
-		cssLink.rel = 'stylesheet';
-		cssLink.type = 'text/css';
-		
-    head.appendChild(cssLink);
-  }
-</script>";
-
-
-/**
 * @ignore
 */
 define('IN_PHPBB', true);
