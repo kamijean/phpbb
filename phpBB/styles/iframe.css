@@ -1,0 +1,25 @@
+#topbar{
+	display: none;
+}
+.navbar{
+	display: none;
+}
+#topbar .user-links{
+	margin-bottom: 0;
+}
+.search-box{
+	display: none;
+}
+.section-viewtopic #page-body > h1{
+	background-color: #444;
+	min-height: 65px;
+	color: #fff;
+	line-height: 65px;
+	padding-left: 30px;
+	font-size: 14pt;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    margin-top: 0;
+}
