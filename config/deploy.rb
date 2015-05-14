@@ -4,6 +4,8 @@ lock '3.4.0'
 set :application, 'latinos-in-action-forum'
 set :repo_url, 'git@github.com:kamijean/phpbb.git'
 
+set :branch, ENV['BRANCH'] || "master"
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
@@ -24,7 +26,7 @@ set :linked_files, %w{phpBB/config.php}
 
 # Default value for linked_dirs is []
 # set :linked_dirs, fetch(:linked_dirs, []).push('phpBB3/store/', 'phpBB3/files/', 'phpBB3/cache/', 'phpBB3/images/avatars/upload/')
-set :linked_dirs, %w{phpBB/store phpBB/files phpBB/cache phpBB/image/avatars/upload}
+set :linked_dirs, %w{phpBB/store phpBB/files phpBB/cache phpBB/images/avatars/upload}
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
@@ -43,6 +45,14 @@ namespace :deploy do
     end
   end
 
+  desc "Remove install folder"
+  task :remove_install_folder do
+  	on roles :all do
+  		set :sudo, "sudo -u deploy -i"
+		  sudo %{rm -rf /var/www/forums.latinosinaction.org/html/current/phpBB/install/}
+		end
+  end
+
 end
 
-#after :deploy, "deploy:fix_permissions"
+after :deploy, "deploy:remove_install_folder"
