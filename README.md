@@ -26,3 +26,9 @@ We have unit and functional tests in order to prevent regressions. You can view 
 ## LICENSE
 
 [GNU General Public License v2](http://opensource.org/licenses/gpl-2.0.php)
+
+
+## Start php server
+https://www.bearfruit.org/2013/11/26/goodbye-mamp-os-x-mavericks-includes-a-built-in-php-webserver/
+php -S localhost:8000
+
