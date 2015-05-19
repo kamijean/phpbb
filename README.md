@@ -32,3 +32,8 @@ We have unit and functional tests in order to prevent regressions. You can view 
 https://www.bearfruit.org/2013/11/26/goodbye-mamp-os-x-mavericks-includes-a-built-in-php-webserver/
 php -S localhost:8000
 
+
+
+## Deploy correct branch
+BRANCH=3.0.x cap production deploy
+
