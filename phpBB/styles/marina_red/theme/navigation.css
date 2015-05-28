@@ -97,10 +97,10 @@
 		margin: 0 auto;
 	}
 	#website-home{
-		display: none;
+		display: block;
 	}
 	#mobile-home{
-		display: block;
+		display: none;
 	}
 }
 
