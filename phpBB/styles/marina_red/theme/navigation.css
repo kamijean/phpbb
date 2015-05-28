@@ -18,6 +18,7 @@
 }
 #nav ul{
 	float: left;
+	position: absolute;
 }
 #nav ul li{
 	line-height: 65px;
@@ -47,21 +48,46 @@
 	border-right: 1px solid #444;
 }
 
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+	#nav .row{
+		width: 940px;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	#nav .row{
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#nav .row{
+		width: 95%;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	#nav .row{
+		width: 95%;
+		margin: 0 auto;
+	}
+}
+
 @media only screen and (min-width: 40.063em) and (max-width: 64em){
 	#nav{
 		height: 65px;
 		background-color: #C7012E;
-	}
-	#nav .row{
-		width: 940px;
-		margin: 0 auto;
 	}
 	#nav img{
 		height: 55px;
 		margin-top: 5px;
 	}
 	#nav ul{
-		float: right;
+		position: absolute;
+		float: left;
 	}
 	#nav ul li{
 		line-height: 65px;
@@ -107,7 +133,8 @@
 		margin: 0px auto;
 	}
 	#nav ul{
-		float: right;
+		position: absolute;
+		float: left;
 	}
 	#nav ul li{
 		line-height: 65px;
