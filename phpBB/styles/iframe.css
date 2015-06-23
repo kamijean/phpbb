@@ -4,6 +4,9 @@
 .navbar{
 	display: none;
 }
+#nav{
+	display:none;
+}
 #topbar .user-links{
 	margin-bottom: 0;
 }
